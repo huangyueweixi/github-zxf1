@@ -7,13 +7,16 @@ package com.zhangxiaofan.git;
 public class Person {
     private String name;
     private int age;
+    private Birthday birthday;
 
     public Person() {
+        birthday = new Birthday();
     }
 
     public Person(String name, int age) {
         this.name = name;
         this.age = age;
+        birthday = new Birthday();
     }
 
     public String getName() {
